@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Fotografi - Layanan</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #0056b3;
+  }
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 18px 15px;
+  }
+  header .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    display: flex;
+    gap: 18px;
+  }
+  nav a {
+    color: white;
+    font-weight: 600;
+  }
+  nav a.active {
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 2px;
+  }
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    margin-bottom: 14px;
+    color: #343a40;
+  }
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .service-item h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 14px 15px;
+  }
+  @media (max-width: 600px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 100%;
+    }
+    main {
+      margin: 20px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Fotografi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="gallery.html">Galeri</a>
+      <a href="services.html" class="active" aria-current="page">Layanan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h2>Layanan Fotografi Kami</h2>
+  <p>Kami menawarkan berbagai layanan fotografi untuk memenuhi kebutuhan Anda:</p>
+  <div class="service-item">
+    <h3>Fotografi Pernikahan</h3>
+    <p>Abadikan momen sakral pernikahan Anda dengan dokumentasi foto yang indah dan berkesan.</p>
+  </div>
+  <div class="service-item">
+    <h3>Fotografi Potret</h3>
+    <p>Sesi foto potret individu, keluarga, atau profesional dengan hasil yang memukau.</p>
+  </div>
+  <div class="service-item">
+    <h3>Fotografi Acara</h3>
+    <p>Dokumentasi lengkap untuk berbagai acara seperti ulang tahun, seminar, dan acara perusahaan.</p>
+  </div>
+  <div class="service-item">
+    <h3>Fotografi Produk</h3>
+    <p>Gambar produk berkualitas tinggi untuk keperluan promosi dan katalog Anda.</p>
+  </div>
+  </main>
+<footer>
+  &copy; 2025 Fotografi. Semua Hak Dilindungi.
+</footer>
+</body>
+</html>

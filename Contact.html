@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Fotografi - Kontak</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #0056b3;
+  }
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 18px 15px;
+  }
+  header .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    display: flex;
+    gap: 18px;
+  }
+  nav a {
+    color: white;
+    font-weight: 600;
+  }
+  nav a.active {
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 2px;
+  }
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    margin-bottom: 14px;
+    color: #343a40;
+  }
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  .contact-info p {
+    margin-bottom: 8px;
+  }
+  .contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  .contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 14px 15px;
+  }
+  @media (max-width: 600px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 100%;
+    }
+    main {
+      margin: 20px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Fotografi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="gallery.html">Galeri</a>
+      <a href="services.html">Layanan</a>
+      <a href="contact.html" class="active" aria-current="page">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h2>Hubungi Kami</h2>
+  <p>Silakan hubungi kami untuk pertanyaan, pemesanan, atau informasi lebih lanjut.</p>
+  <div class="contact-info">
+    <h3>Informasi Kontak</h3>
+    <p>Alamat: Jl.lintas tente parado bima</p>
+    <p>Email: abdulkadirjaelani963@gmail.com</p>
+    <p>Telepon: +62 85337925865</p>
+  </div>
+  <div class="contact-form">
+    <h3>Kirim Pesan</h3>
+    <form action="#" method="post">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+</main>
+<footer>
+  &copy; 2024 Fotografi. Semua Hak Dilindungi.
+</footer>
+</body>
+</html>

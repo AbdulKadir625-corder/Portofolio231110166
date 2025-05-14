@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Fotografi - Galeri</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #0056b3;
+  }
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 18px 15px;
+  }
+  header .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    display: flex;
+    gap: 18px;
+  }
+  nav a {
+    color: white;
+    font-weight: 600;
+  }
+  nav a.active {
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 2px;
+  }
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    margin-bottom: 14px;
+    color: #343a40;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 14px 15px;
+  }
+  @media (max-width: 600px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 100%;
+    }
+    main {
+      margin: 20px 10px;
+    }
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Fotografi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="gallery.html" class="active" aria-current="page">Galeri</a>
+      <a href="services.html">Layanan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h2>Galeri Foto Kami</h2>
+  <p>Berikut adalah beberapa hasil karya fotografi kami. Klik pada gambar untuk melihat lebih dekat.</p>
+  <div class="gallery">
+    <img src="https://i.imgur.com/jpzXlWm.jpeg" alt="Foto 1">
+    <img src="https://i.imgur.com/eUBBnxQ.jpeg" alt="Foto 2">
+    <img src="https://i.imgur.com/cHhfbhZ.jpeg" alt="Foto 3">
+    <img src="https://i.imgur.com/UVbdeIA.jpeg" alt="Foto 4">
+    <img src="https://i.imgur.com/jKeFnIw.jpeg" alt="Foto 5">
+     <img src="https://i.imgur.com/3Ef2q5N.jpeg" alt="Foto 6">
+    </div>
+</main>
+<footer>
+  &copy; 2024 Fotografi. Semua Hak Dilindungi.
+</footer>
+</body>
+</html>
